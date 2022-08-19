@@ -1,0 +1,226 @@
+Node.js 
+what is Node.js?
+Node.js is a javascript runtime environment bulit on chrome's V8 javascript engine 
+
+What is runtime environment?
+.The runtime environment is  the enviroment where  your application is running in where we can run our node application.
+
+. The runtime environment is literally just the environment your application running in
+
+Node.js is a javascript running on the server
+
+V8 javascript engine : it convert the javascript code to machine code(or to binary number ) that our system will understand the javascript code  
+
+command to built run-time environment 
+(npm run server)
+
+whenever we work on node it simple gives us a runtime environment to work with javascript
+
+Best point is we can run javascript on the server by using node..js
+
+when to use Node.js
+1. I/O (input & output) bound
+2.Data streaming application(like netflix, facebook, youtube)
+
+3.Real time chat application(whatsapp)
+
+4.Asynchronous handle event driven IO help concurrent request handling
+
+5.At the same time it accepts many requests.
+that's why it is non-blocking but it is single thread
+
+Famous apps built on Node.js
+1.NETFILX
+2.PAYPAL
+3.UBER
+4.EBAY
+5.WALMART
+6.GROUPON
+
+when Node.js is not a good idea
+(1. A CPU-Heavy Application: Using Node.js Is Simply a Bad Idea)
+.Applications with heavy computing server-side. Since Node. js uses only one CPU core, heavy computations on the server will block all other requests. ...
+. intense CPU-processing activity will actually block the incoming requests
+
+
+(2.A Relational Database-Backed Server-Side App)
+Server-side web applications with relational databases. The reason for Node.
+
+
+
+How to create a website using Node. js and Express
+Install Node.
+
+Make a new Express app. Install nodemon. Add a development startup script. Preview the web app.
+
+HTML templates. Overview of Pug. Example HTML to Pug conversion.
+
+Overview of the default Express app.
+Implementation. App file structure. app.js. layout.pug. ...
+Appearance.
+
+
+
+Node.js Repl 
+
+REPL =>Read
+Eval 
+Print 
+Loop
+The REPL feature of node is very useful in experimenting with node.js codes and to debug javascript codes
+
+
+
+Here are some other points that why we use Node.js
+1.Node.js is really fast as compare to other. 
+
+2.Node package manager has over 50,000 bundles for at the disposal
+
+3.perfect for data intensive. real-time we application as Node.js never waits for an API to return data
+
+4.Better synchronization of code between server and client due to same code base.
+
+5.Easy for web developers to start using Node.js in their projects as it is a javascript library
+
+
+
+
+Node Modules
+1. Modules are like javascript libraries that can be used in a Node.js application to include a set of functions.
+
+
+2.To include a module in a Node.js application, use require()  function with the parenthesis containing the name of the module
+
+//CREATING A WEB SERVER 
+
+//Include modules 
+var http = require('http');
+var server = http.createServer(function(req, res){
+// write you code here 
+});
+
+///////////////////////////////
+
+
+
+
+
+what is OOP?
+=> object oriented programming is way of writing code that allows you to create different objects from a common object .The common object is usually called blueprint while the created objects are called instances. Each instance has properties that are not shared other properties.
+
+(Object Oriented Programming) (ES6version)
+its is Code methodology/style/ pattern 
+=>code more Modular and Reusable 
+=>well Organzed code 
+=>easier to debug
+=>best for medium to large website projects
+
+
+In modern world we use oop mainly in Javascript framework like 
+Vue.js
+angular.js
+node.js
+
+we to under two concept 
+Class
+Object
+And the concept of OOP is use over is high programming language
+
+type of methods
+Constructor method
+whenever we make a class of any object this constructor is automatically call itself 
+why we use constructor method
+when ever we have to define a property in a class or to assign a value to it or to initialize the value then we use constuctor method
+constructor(){
+console.log("hello")
+} 
+
+Prototype method
+we take  the method name by our self and this method is not call by itself we have to call it ..... in this we have to store the method to a new object .
+why we use Prototype method
+basically we use the prototype method by the help of constructor we asign value to any variable the prototype method is use to calculate the value
+hello(){
+console.log("hello")
+}
+
+Static method
+In this we take  the method name by our self in this we don't have to store the method to a new object we directly call it
+
+static name(){
+console.log("hello")
+}
+Why we use OOP?
+=> it also provides easy ways to creating prototypes and organize related data. true OOP languages do not perform prototyping in the background just it take note of that
+
+             Benefits of OOP
+
+1.Encapsulaion : Reduce complexity + increase reusability
+=> Group related variable and function together this way we can reduce complexity
+
+2.Abstraction : Reduce complexity + isolate impact of changes
+=> we hide the unnecessary details and the complexity and the show the necessary details 
+=>Exposing necessary features of a class without explaining much or details is done by Abstraction.
+
+3.Inheritance: Eliminate redundant code 
+=>
+
+4.Polymorphism : Refactor ugly switch/case statement
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+         NEW THING I HAVE STUDY IN JAVASCRIPT
+1.EVENT LOOPING
+The event loop is a constantly running process that monitors both the callback queue and the call stack. 
+
+2.MUTATING AND IMMUTATING
+A mutable object is an object whose state can be modified after it is created. Immutables are the objects whose state cannot be changed once the object is created. Strings and Numbers are Immutable
+
+3.NODE MODULES
+ communicates with an external application on the basis of their related functionality
+
+
+
+
+Additional things thats i have study
+
+NEW THING I HAVE STUDY IN JAVASCRIPT
+1.EVENT LOOPING
+The event loop is a constantly running process that monitors both the callback queue and the call stack.
+A browser tab runs in a single thread–an event loop. This loop continuously picks messages
+from the message queue and executes the callbacks associated with them. The event loop
+simply keeps picking tasks from the message queues while other processes add tasks to the
+ message queue. Other processes such as timers and event handlers run in parallel and keep
+adding tasks to the queue.
+2.MUTATING AND IMMUTATING
+ immutables
+A variable declared with the const keyword
+creates a read-only reference to a value these are immutable
+mutating
+mutating the state we mean an alteration of the value of a variable or of the structure of an object.
+like using var and let to define a variable
+A mutable object is an object whose state can be modified after it is created. Immutables are the objects whose state cannot be changed once the object is created. Strings and Numbers are Immutable
+3.NODE MODULES
+before es6
+ importing
+It means include a library in a program so that use the function is defined in that library.
+For this, use ‘require’ function in which pass the library name with its relative path
+eg, const lib = require('./library')
+exporting
+There is a special object in JavaScript called module.exports.
+ those functions that need to be exposed or need to be available so that it can used in some other file, defined in module.exports.
+communicates with an external application on the basis of their related functionality
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+(Javascript Main Concepts)
+
+1.Primitive Data types and non primitive(Reference types)
+2.Array and Array methods
+3.General loops
+4. High order functions
+5.DOM manipulation
+6. Event (Event bubbling) (Event capturing) (Event delegation)
+7.Concept of OOP in javascript
+8.Generator
+9.Synchronous programming and Asynchronous
+10. Callbacks, Promises, Async/Await
+
+server.listen(2000);
